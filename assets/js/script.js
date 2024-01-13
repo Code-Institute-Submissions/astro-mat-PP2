@@ -1,12 +1,11 @@
 
 
-function getRandomNumber(max) {
-    return Math.floor(Math.random() * max);
-}
 
 var firstRandom = getRandomNumber(firstColumn.length - 1);
+var secondRandom = getRandomNumber(secondColumn.length - 1);
+var thirdRandom = getRandomNumber(thirdColumn.length - 1);
 
-firstColumn = [
+let firstColumn = [
     "1st string E only", 
     "2nd string B only",
     "3rd string G only",
@@ -19,6 +18,45 @@ firstColumn = [
     "no adjacent strings (Always skip if changing strings)",
     "No string restrictions"];
 
-$('.body_name h1').text(firstColumn[firstRandom] + '' + secondColumn[secondRandom] + '' + thirdColumn[thirdRandom]);
+let secondColumn = [
+    "your pointer finger",
+    "your middle finger",
+    "your ring finger",
+    "your pinky finger",
+    "picking every note",
+    "picking few notes",
+    "slides",
+    "bends",
+    "hammer on's",
+    "open strings",
+    "nothing"]
 
-console.log();
+let thirdColumn = [
+    "B or C (Your Choice)",
+    "C#/Db.",
+    "D.",
+    "D#/Eb.",
+    "E.",
+    "F.",
+    "F#/Gb.",
+    "G.",
+    "G#/Ab.",
+    "A.",
+    "A#/Bb."]
+
+function getRandomNumber(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+
+
+function generatePrompt() {
+    let num1 = Math.floor(Math.random() * 11);
+    let num2 = Math.floor(Math.random() * 11);
+    let num3 = Math.floor(Math.random() * 11);
+    alert("you clicked the button");
+    }
+    
+
+
+
