@@ -31,16 +31,17 @@
             free to use any mode you wish!</p>
         </div>
         <div class="generate-button-area">
-            <button onclick="generatePrompt()" data-type="generate" class="generate-button">GENERATE YOUR PROMPT</button>
+            <button id="generate-button">GENERATE YOUR PROMPT</button>
         </div>
         <p class="prompt">
             <h3>
                 Your Prompt:
             </h3> 
             <span id="prompt">
-                <h2>
-                    Use string 4 (G) with just your pinky finger in the key of F#/Gb
-                </h2>
+                <h2 id="outputFirst">Press the button to generate a prompt!</h2>
+                <h2 id="outputSecond"></h2>
+                <h2 id="outputThird"></h2>
+
             </span>
         </p>
     </div>
