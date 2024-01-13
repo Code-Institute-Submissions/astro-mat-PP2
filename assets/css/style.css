@@ -75,16 +75,8 @@ body {
         padding: 0;
     }
 
-
     .heading {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 320px) {
-    .generate-area {
-        height: 70vh;
-    }
-
-
-}
