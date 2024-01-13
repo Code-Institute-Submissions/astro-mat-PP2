@@ -192,4 +192,6 @@ GENERAL TEMP NOTES
 
 
 Credits:
-Dan phelps who developed the toolkit but has since took down all references to it on his website
+Dan phelps who developed the toolkit but has since took down all references to it on his website. [danphelps.com](https://www.danphelps.com/)
+Guitar scales generated from  [all-guitar-chords](https://www.all-guitar-chords.com/scales)
+Code institute "Love Maths" Walk through project  [Code institute "Love Maths" Walk through project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/?child=last)
