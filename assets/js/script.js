@@ -3,7 +3,7 @@ let outputFirst = document.getElementById("outputFirst");
 let outputSecond = document.getElementById("outputSecond");
 let outputThird = document.getElementById("outputThird");
 
-let backingTrack = document.getElementById("backingTrack");
+let outputBackingtrack = document.getElementById("backingTrack");
 
 
 /*
@@ -42,7 +42,8 @@ let secondColumn = [
     "Focus on nothing"];
 
 let thirdColumn = [
-    "In the key of B or C (Your Choice)",
+    "In the key of B",
+    "In the key of C",
     "In the key of C#/Db.",
     "In the key of D.",
     "In the key of D#/Eb.",
@@ -53,6 +54,10 @@ let thirdColumn = [
     "In the key of G#/Ab.",
     "In the key of A.",
     "In the key of A#/Bb."]
+
+    var keyB = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/788758180&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/oceanographic" title="Oceanographic" target="_blank" style="color: #cccccc; text-decoration: none;">Oceanographic</a> · <a href="https://soundcloud.com/oceanographic/ilp-pad-b" title="Improv Launch Pad B" target="_blank" style="color: #cccccc; text-decoration: none;">Improv Launch Pad B</a></div>';
+    var keyC = "https://on.soundcloud.com/1uajq";
+    var keyCsharp = "https://on.soundcloud.com/ZMBCW";
 
 
 /**
@@ -66,6 +71,10 @@ generateButton.addEventListener("click", function() {
     outputSecond.innerHTML = randomSecondColumn;
     var randomThirdColumn = thirdColumn[Math.floor(Math.random() * thirdColumn.length)]
     outputThird.innerHTML = randomThirdColumn;
+
+    if (outputThird == "In the key of B") {
+        outputBackingtrack.innerHTML = keyB;
+    }
 
 
 })
