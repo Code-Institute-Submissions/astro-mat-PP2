@@ -43,6 +43,7 @@ body {
 
 .prompt {
     font-size: 50px;
+    margin: 10px;
 }
 
 
@@ -50,9 +51,13 @@ body {
 #promptBox {
     background-color: beige;
     border: 30px;
-    position: absolute;
     width: 70%;
     padding: 10px;
+    margin: auto;
+    width: 70%;
+    border: 3px solid #445361;
+    padding: 10px;
+    margin-top: 20px;
 
 
 }
