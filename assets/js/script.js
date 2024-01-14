@@ -3,6 +3,8 @@ let outputFirst = document.getElementById("outputFirst");
 let outputSecond = document.getElementById("outputSecond");
 let outputThird = document.getElementById("outputThird");
 
+let backingTrack = document.getElementById("backingTrack");
+
 
 /*
 var firstRandom = getRandomNumber(firstColumn.length - 1);
@@ -52,9 +54,6 @@ let thirdColumn = [
     "In the key of A.",
     "In the key of A#/Bb."]
 
-function getRandomNumber(max) {
-        return Math.floor(Math.random() * max);
-    }
 
 /**
  * The main prompt generator
@@ -67,10 +66,7 @@ generateButton.addEventListener("click", function() {
     outputSecond.innerHTML = randomSecondColumn;
     var randomThirdColumn = thirdColumn[Math.floor(Math.random() * thirdColumn.length)]
     outputThird.innerHTML = randomThirdColumn;
+
+
 })
-
-
-    
-
-
 
