@@ -135,10 +135,10 @@ generateButton.addEventListener("click", function() {
     var randomThirdColumn = thirdColumn[Math.floor(Math.random() * thirdColumn.length)]
     outputThird.innerHTML = randomThirdColumn.text;
     outputIframe.innerHTML = randomThirdColumn.iframe;
-    outputMajorScale.innerHTML = randomThirdColumn.imageMajor;
-    outputMinorScale.innerHTML = randomThirdColumn.imageMinor;
-    outputPentScale.innerHTML = randomThirdColumn.imagePent;
 
+    outputMajorScale.src = randomThirdColumn.imageMajor;
+    outputMinorScale.src = randomThirdColumn.imageMinor;
+    outputPentScale.src = randomThirdColumn.imagePent;
 
     switch (outputThird) {
         case 1:
