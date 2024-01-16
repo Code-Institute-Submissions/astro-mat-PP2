@@ -87,9 +87,9 @@ body {
 
 
 @media (max-width: 320px) {
-        .generate-area {
-            height: 70vh;
-        }
+    .generate-area {
+        height: 130vh;
+    }
 
     .generate-area span {
         padding: 0;
