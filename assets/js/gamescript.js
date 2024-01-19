@@ -1,47 +1,52 @@
 const questions = [
     {
-        question: "Identify this scale",
+        question: "Identify this scale ",
+        audio: "assets/audio/c-major.wav",
         answers: [
             {text: "C Dorian", correct: false},
             {text: "C Locrian", correct: false},
             {text: "C Major", correct: true},
-            {text: "C phrigian", correct: false},
+            {text: "C phryigian", correct: false},
         ]
     },
     {
         question: "Identify this scale",
+        audio: "assets/audio/c-dorian.wav",
         answers: [
             {text: "C Dorian", correct: true},
-            {text: "C phrigian", correct: false},
+            {text: "C phryigian", correct: false},
             {text: "C Major", correct: false},
             {text: "C Locrian", correct: false},
         ]  
     },
     {
         question: "Identify this scale",
+        audio: "assets/audio/c-phrygian.wav",
         answers: [
             {text: "C Dorian", correct: false},
             {text: "C Locrian", correct: false},
             {text: "C Major", correct: false},
-            {text: "C phrigian", correct: true},
+            {text: "C phryigian", correct: true},
         ]
     },
     {
         question: "Identify this scale",
+        audio: "assets/audio/c-locrian.wav",
         answers: [
             {text: "C Dorian", correct: false},
             {text: "C Locrian", correct: true},
             {text: "C Major", correct: false},
-            {text: "C phrigian", correct: false},
+            {text: "C phryigian", correct: false},
         ]
     },
     {
         question: "Identify this scale",
+        audio: "assets/audio/c-minor.wav",
         answers: [
             {text: "C Dorian", correct: false},
-            {text: "C Locrian", correct: true},
+            {text: "C Locrian", correct: false},
             {text: "C Major", correct: false},
-            {text: "C phrigian", correct: false},
+            {text: "C Minor", correct: true},
         ]
     }
 ];
@@ -49,6 +54,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const questionAudio = document.getElementById("audio-question");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -60,11 +66,14 @@ function startQuiz() {
     showQuestion();
 }
 
+
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    questionAudio.src = currentQuestion.audio;   
+
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
