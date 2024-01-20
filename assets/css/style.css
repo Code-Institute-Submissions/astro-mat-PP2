@@ -30,6 +30,7 @@ header {
 }
 
 h1 {
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -49,7 +50,20 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/*navbar styles with dropdown toggle*/
+nav {
+    text-align: left;
+    position: absolute;
+    background-color: #ffffff;.
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
 header a {
+    text-align: left;
     text-decoration: none;
     color: inherit;
 }
