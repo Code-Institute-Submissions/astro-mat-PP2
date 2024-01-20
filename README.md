@@ -202,3 +202,5 @@ CODE
 https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-an-element-using-javascript
 Random Quote Generator:
 https://www.youtube.com/watch?v=NmstSmMykqc
+How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript
+https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack
