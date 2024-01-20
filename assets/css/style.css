@@ -9,6 +9,9 @@
 /* --------- Global style */
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     font-family: "Raleway", sans-serif;
     color: #445361;
@@ -18,8 +21,15 @@ body {
 
 /* Header */
 header {
+
     background-color: lightcoral;
 }
+/* Main Content */
+main {
+    /* make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
 
 /* Footer */
 footer {
@@ -30,6 +40,7 @@ footer {
 /* --------- Heading */
 
 .heading {
+    margin: 20px;
     text-align: center;
     font-size: 3rem;
 }
@@ -41,6 +52,7 @@ footer {
 /* ---------  layout */
 
 .generate-area {
+    margin: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 85%;
@@ -50,8 +62,15 @@ footer {
     margin-right: auto;
     padding: 1%;
 }
+generate-area {
+    margin: 20px;
+}
+description {
+    margin: 20px;
+}
 
 .results-area {
+    margin: 20px;
     width: 80%;
     font-size: 2rem;
     margin: auto;
