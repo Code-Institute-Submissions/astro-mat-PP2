@@ -1,3 +1,11 @@
+/*Asterisk wildcard selector to overide default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 /* --------- Global style */
 
 body {
@@ -6,6 +14,19 @@ body {
     color: #445361;
     text-align: center;
 }
+
+
+/* Header */
+header {
+    background-color: lightcoral;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+}
+
+
 /* --------- Heading */
 
 .heading {
