@@ -256,7 +256,7 @@ description {
 }
 
 
-/* -------------------------------- Media queries ---------------------------------------------------------*/
+/* -------------------------------------------------------------- Media queries ---------------------------------------------------------*/
 
 
 
@@ -264,7 +264,7 @@ description {
 
 
 /* Media query: Tablets and larger (768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     /* header */
     nav {
         display: block;
@@ -285,5 +285,18 @@ description {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 50px;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Media query: Laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
