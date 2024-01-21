@@ -8,6 +8,10 @@
 
 /* --------- Global style */
 
+p {
+    padding: 10px;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -173,7 +177,10 @@ description {
     padding: 30px;
 }
 
-
+.app h1 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
 
 .quiz {
     padding: 20px 0;
@@ -249,25 +256,34 @@ description {
 }
 
 
-/* --------- Media queries */
+/* -------------------------------- Media queries ---------------------------------------------------------*/
 
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
+
+
+
+
+
+/* Media query: Tablets and larger (768px and up) */
+@media (min-width: 768px) {
+    /* header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        padding-right: 1rem;
     }
 
-
-@media (max-width: 320px) {
-    .generate-area {
-        height: 130vh;
+    #menu {
+        display: flex;
+        
     }
 
-    .generate-area span {
-        padding: 0;
+    #menu > li {
+        padding-left: 1rem;
+        text-align: center;
     }
 
-    .heading {
-        font-size: 2rem;
+    .nav-toggle-label {
+        display: none;
     }
 }
-
