@@ -122,6 +122,15 @@ let thirdColumn = [
     imagePent: "assets/images/scales/AsharpPenMin.JPG",
     }
 ]
+
+/**Default page with no imges and backing track */
+
+function TestsFunction() {
+    var T = document.getElementById("results-area");
+    T.style.display = "block";  // <-- Set it to block
+}
+
+
 /**
  * The main prompt generator
  */
@@ -178,11 +187,6 @@ generateButton.addEventListener("click", function() {
     
 
 }
-
-
-
-
-
 
 })
 
