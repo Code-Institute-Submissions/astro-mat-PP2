@@ -117,6 +117,10 @@ footer {
 }
 /* ---------  layout */
 
+.description {
+    padding: 10px;
+}
+
 .generate-area {
     margin: 20px;
     background-color: #E6ECF0;
@@ -163,12 +167,14 @@ description {
     border: 3px solid #445361;
     padding: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 /*Game CSS */
 .app {
     background: #fff;
+    background-color: #E6ECF0;
     width: 90%;
     max-width: 600px;
     margin: auto;
