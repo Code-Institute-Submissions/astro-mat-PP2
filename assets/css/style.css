@@ -220,6 +220,10 @@ description {
     cursor: no-drop;
 }
 
+#audio-question {
+    padding: 20px;
+}
+
 #next-btn {
     background: #001e4d;
     color: #fff;

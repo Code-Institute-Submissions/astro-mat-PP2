@@ -13,7 +13,7 @@ const questions = [
         question: "Identify this scale",
         audio: "assets/audio/c-dorian.wav",
         answers: [
-            {text: "C Dorian", correct: true},
+            {text: "C Dorian 2", correct: true},
             {text: "C phryigian", correct: false},
             {text: "C Major", correct: false},
             {text: "C Locrian", correct: false},
@@ -23,7 +23,7 @@ const questions = [
         question: "Identify this scale",
         audio: "assets/audio/c-phrygian.wav",
         answers: [
-            {text: "C Dorian", correct: false},
+            {text: "C Dorian 3", correct: false},
             {text: "C Locrian", correct: false},
             {text: "C Major", correct: false},
             {text: "C phryigian", correct: true},
@@ -33,7 +33,7 @@ const questions = [
         question: "Identify this scale",
         audio: "assets/audio/c-locrian.wav",
         answers: [
-            {text: "C Dorian", correct: false},
+            {text: "C Dorian 4", correct: false},
             {text: "C Locrian", correct: true},
             {text: "C Major", correct: false},
             {text: "C phryigian", correct: false},
@@ -43,14 +43,15 @@ const questions = [
         question: "Identify this scale",
         audio: "assets/audio/c-minor.wav",
         answers: [
-            {text: "C Dorian", correct: false},
+            {text: "C Dorian 5", correct: false},
             {text: "C Locrian", correct: false},
             {text: "C Major", correct: false},
             {text: "C Minor", correct: true},
         ]
     }
 ];
-
+let shuffledQuestions = [];
+const totalQuizQuestions = 5;
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -59,7 +60,26 @@ const questionAudio = document.getElementById("audio-question");
 let currentQuestionIndex = 0;
 let score = 0;
 
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex > 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}
+
 function startQuiz() {
+    shuffledQuestions = shuffle(questions);
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next"
@@ -69,7 +89,7 @@ function startQuiz() {
 
 function showQuestion() {
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
     questionAudio.src = currentQuestion.audio;   
@@ -115,14 +135,14 @@ function selectAnswer (e) {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${totalQuizQuestions}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length) {
+    if(currentQuestionIndex < totalQuizQuestions) {
         showQuestion();
     }else {
         showScore();
@@ -130,7 +150,7 @@ function handleNextButton(){
 }
 
 nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
+    if(currentQuestionIndex < totalQuizQuestions){
         handleNextButton();
     } else {
         startQuiz();
@@ -138,3 +158,14 @@ nextButton.addEventListener("click", ()=>{
 })
 
 startQuiz();
+
+
+
+
+
+
+
+
+
+
+
