@@ -194,6 +194,10 @@ Performance
 
 GENERAL TEMP NOTES
 
+Future improvements:
+Different levels. Maybe, easy medium hard
+
+
 
 Credits:
 Dan phelps who developed the toolkit but has since took down all references to it on his website. [danphelps.com](https://www.danphelps.com/)
@@ -208,3 +212,5 @@ Random Quote Generator:
 https://www.youtube.com/watch?v=NmstSmMykqc
 How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript
 https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack
+Shuffle array
+https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
