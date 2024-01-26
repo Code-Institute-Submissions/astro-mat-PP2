@@ -96,6 +96,9 @@ main {
     margin-top: 111px;
 }
 
+#majorScale, #minorScale, #pentScale {
+    width: 100%;
+}
 
 /* Footer */
 footer {
@@ -151,12 +154,6 @@ description {
     padding: 0 15px;
 }
 
-.prompt {
-    font-size: 50px;
-}
-
-
-
 #promptBox {
     background-color: beige;
     border: 30px;
@@ -169,6 +166,15 @@ description {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+h3 {
+    padding: 20px;
+}
+
+h2, h4 {
+    padding: 5px
+}
+
 
 
 /*Game CSS */
@@ -267,11 +273,6 @@ description {
 
 
 /* -------------------------------------------------------------- Media queries ---------------------------------------------------------*/
-
-
-
-
-
 
 /* Media query: Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
