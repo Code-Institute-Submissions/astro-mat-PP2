@@ -281,6 +281,7 @@ h2, h4 {
         display: block;
         position: relative;
         box-shadow: none;
+        width: fit-content;
         padding-right: 1rem;
     }
 

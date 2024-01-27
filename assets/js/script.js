@@ -1,15 +1,3 @@
-{
-    /*
-     * RELAXING OPTIONS
-     * =================
-     */
-  
-    // Suppress warnings about == null comparisons.
-    "eqnull": true,
-  
-    "predef" : ["outputBackingtrack", "keyB"]
-  }
-
 let generateButton = document.getElementById("generate-button");
 let outputFirst = document.getElementById("outputFirst");
 let outputSecond = document.getElementById("outputSecond");
