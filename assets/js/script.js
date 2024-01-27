@@ -139,6 +139,7 @@ let thirdColumn = [
 generateButton.addEventListener("click", function () {
     /**Default page with no imges and backing track */
     document.getElementById('results-area').style.display = 'block'; 
+    document.getElementById('promptBox').style.display = 'block'; 
     /*generator*/
     var randomFirstColumn = firstColumn[Math.floor(Math.random() * firstColumn.length)];
     outputFirst.innerHTML = randomFirstColumn;
