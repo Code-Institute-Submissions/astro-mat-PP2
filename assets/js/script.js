@@ -123,9 +123,6 @@ let thirdColumn = [
     }
 ];
 
-
-
-
 /**
  * The main prompt generator
  */
@@ -149,42 +146,37 @@ generateButton.addEventListener("click", function () {
 
     switch (outputThird) {
         case 1:
-            outputThird.innerText == "In the key of B.";
+            outputThird.innerText = "In the key of B.";
             outputBackingtrack.innerHTML = keyB;
             break;
         case 2:
-            outputThird.innerText == "In the key of C.";
+            outputThird.innerText = "In the key of C.";
             outputBackingtrack.innerHTML = keyC;
             break;
         case 3:
-            outputThird.innerText == "In the key of C#/Db.";
+            outputThird.innerText = "In the key of C#/Db.";
             outputBackingtrack.innerHTML = keyCsharp;
             break;
         case 4:
-            outputThird.innerText == "In the key of D.";
+            outputThird.innerText = "In the key of D.";
             outputBackingtrack.innerHTML = keyD;
             break;
         case 5:
-            outputThird.innerText == "In the key of D#/Eb.";
+            outputThird.innerText = "In the key of D#/Eb.";
             outputBackingtrack.innerHTML = keyDsharp;
             break;
         case 6:
-            outputThird.innerText == "In the key of E.";
+            outputThird.innerText = "In the key of E.";
             outputBackingtrack.innerHTML = keyE;
             break;
         case 7:
-            outputThird.innerText == "In the key of F.";
+            outputThird.innerText = "In the key of F.";
             outputBackingtrack.innerHTML = keyF;
             break;
         case 8:
-            outputThird.innerText == "In the key of F#/Gb.";
+            outputThird.innerText = "In the key of F#/Gb.";
             outputBackingtrack.innerHTML = keyFsharp;
-            outputMajorScale.innerHTML = '<img src="assets/images/scales/FsharpMajor.jpg" alt="F#Major" width=100%>';
             break;
-
-
-
     }
-
 });
 
