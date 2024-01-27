@@ -9,6 +9,15 @@ let outputMajorScale = document.getElementById("majorScale");
 let outputMinorScale = document.getElementById("minorScale");
 let outputPentScale = document.getElementById("pentScale");
 
+let outputBackingtrack;
+let keyB;
+let keyC;
+let keyD;
+let keyCsharp;
+let keyDsharp;
+let keyE;
+let keyF;
+let keyFsharp;
 
 let firstColumn = [
     "Use the 1st string (E) only",
