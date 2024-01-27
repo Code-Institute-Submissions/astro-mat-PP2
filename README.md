@@ -193,7 +193,8 @@ If the user clicks the "How to Play" button the instructions section appears and
 - #### Javascript
     - No errors or warnings were returned when passing through the JS validator[JSHint Validator](https://jshint.com/)
 
-  ![JSHint Validator Results](docs/readme_images/jshint_validator.png)
+  ![JSHint Validator Results - script.js](docs/readme_images/jshint_validator_script.jpg)
+  ![JSHint Validator Results - gamescript.js](docs/readme_images/jshint_validator_gamescript.jpg)
   
 
 ### Accessibility 
