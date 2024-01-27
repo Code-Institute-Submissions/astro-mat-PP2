@@ -1,3 +1,15 @@
+{
+    /*
+     * RELAXING OPTIONS
+     * =================
+     */
+  
+    // Suppress warnings about == null comparisons.
+    "eqnull": true,
+  
+    "predef" : ["outputBackingtrack", "keyB"]
+  }
+
 let generateButton = document.getElementById("generate-button");
 let outputFirst = document.getElementById("outputFirst");
 let outputSecond = document.getElementById("outputSecond");
@@ -121,7 +133,7 @@ let thirdColumn = [
         imageMinor: "assets/images/scales/AsharpMelMin.JPG",
         imagePent: "assets/images/scales/AsharpPenMin.JPG",
     }
-]
+];
 
 
 
@@ -134,12 +146,12 @@ generateButton.addEventListener("click", function () {
     /**Default page with no imges and backing track */
     document.getElementById('results-area').style.display = 'block'; 
     /*generator*/
-    var randomFirstColumn = firstColumn[Math.floor(Math.random() * firstColumn.length)]
+    var randomFirstColumn = firstColumn[Math.floor(Math.random() * firstColumn.length)];
     outputFirst.innerHTML = randomFirstColumn;
-    var randomSecondColumn = secondColumn[Math.floor(Math.random() * secondColumn.length)]
+    var randomSecondColumn = secondColumn[Math.floor(Math.random() * secondColumn.length)];
     outputSecond.innerHTML = randomSecondColumn;
 
-    var randomThirdColumn = thirdColumn[Math.floor(Math.random() * thirdColumn.length)]
+    var randomThirdColumn = thirdColumn[Math.floor(Math.random() * thirdColumn.length)];
     outputThird.innerHTML = randomThirdColumn.text;
     outputIframe.innerHTML = randomThirdColumn.iframe;
 
@@ -186,5 +198,5 @@ generateButton.addEventListener("click", function () {
 
     }
 
-})
+});
 
