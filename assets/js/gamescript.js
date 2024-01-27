@@ -182,7 +182,7 @@ function startQuiz() {
     shuffledQuestions = shuffle(questions);
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next"
+    nextButton.innerHTML = "Next";
     showQuestion();
 }
 
@@ -255,17 +255,6 @@ nextButton.addEventListener("click", ()=>{
     } else {
         startQuiz();
     }
-})
+});
 
 startQuiz();
-
-
-
-
-
-
-
-
-
-
-
