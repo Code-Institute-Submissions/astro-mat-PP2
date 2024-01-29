@@ -1,11 +1,13 @@
 # Guitar Practice Tools
 
-The improv launchpad is a site providing a suite of tools usefull to the guitarist. It aims to provide the user with an interactive guitar practice structure. THe site will also provide a scale learning quiz that tests the users scale knowledge and aims to to teach the ability to recognise scales by ear. 
+Guitar Practice tools is a site providing a suite of tools useful to the guitarist. It aims to provide the user with an interactive guitar practice structure. THe site will also provide a scale learning quiz that tests the users scale knowledge and aims to to teach the ability to recognise scales by ear. 
 
 It will be a basic site that will provide a good visual experience and clear images. The game is a great way to teach users the sound of different scales and then use that knowledge during practice.
 users
 
 The live link can be found here - [Guitar Practice tools](https://astro-mat.github.io/PP2/)
+
+![Guitar Practice Tools Am I Responsive Image](docs/readme_images/am_i_responsive.jpg)
 
 Table of Contents
 
@@ -75,15 +77,27 @@ Wireframes were produced using Balsamiq.
 
  <details>
 
- <summary>Desktop Wireframe</summary>
+ <summary>Desktop Wireframes</summary>
 
-![Desktop Wireframe](docs/wireframes/desktop_wireframe.png)
+#### Desktop Wireframe - Improv Launch Pad
+
+![Desktop Wireframe - Improv Launch Pad](docs/readme_images/desktop_wireframe_LP.png)
+
+#### Desktop Wireframe - Scale Game
+
+![Desktop Wireframe - Scale Game](docs/readme_images/desktop_wireframe_game.png)
  </details>
 
  <details>
-    <summary>Mobile Wireframe</summary>
+    <summary>Mobile Wireframes</summary>
 
-![Mobile Wireframe](docs/wireframes/mobile_wireframe.png)
+#### Mobile Wireframe - Improv Launch Pad
+
+![Mobile Wireframe - Improv Launch Pad](docs/readme_images/mobile_wireframe_LP.png)
+
+#### Mobile Wireframe - Scale Game
+
+![Mobile Wireframe - Scale Game](docs/readme_images/mobile_wireframe_game.png)
  </details>
 
 
@@ -202,11 +216,13 @@ If the user clicks the "How to Play" button the instructions section appears and
 
 Mobile Lighthouse Score
 
-![Mobile Lighthouse Score](docs/readme_images/mobile_lighthouse.png)
+![Mobile Lighthouse Score - Improv LaunchPad](docs/readme_images/mobile_lighthouse_improvLP.jpg)
+![Mobile Lighthouse Score - Scale Game](docs/readme_images/mobile_lighthouse_scalegame.jpg)
 
 Desktop Lighthouse Score
 
-![Desktop Lighthouse Score](docs/readme_images/desktop_lighthouse.png)
+![Desktop Lighthouse Score - Improv LaunchPad](docs/readme_images/desktop_lighthouse_improvLP.jpg)
+![Desktop Lighthouse Score - Scale Game](docs/readme_images/desktop_lighthouse_scalegame.jpg)
 
 ### Input Testing
 - The username text input has been tested to ensure it won't save to the leaderboard unless text is inputted into the field.
@@ -361,6 +377,10 @@ GENERAL TEMP NOTES
 Future improvements:
 Different levels. Maybe, easy medium hard
 
+TODO-------------------------
+- delete this infor from the end
+- READ
+-compile table of contents
 
 
 Credits:
