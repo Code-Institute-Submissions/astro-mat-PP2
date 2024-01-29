@@ -9,7 +9,51 @@ The live link can be found here - [Guitar Practice tools](https://astro-mat.gith
 
 ![Guitar Practice Tools Am I Responsive Image](docs/readme_images/am_i_responsive.jpg)
 
-Table of Contents
+## Table of Contents
+
+- [Guitar Practice Tools](#guitar-practice-tools)
+  * [Site Owner Goals](#site-owner-goals)
+  * [User Stories](#user-stories)
+    + [First Time User](#first-time-user)
+    + [Returning user](#returning-user)
+    + [Frequent user](#frequent-user)
+  * [Design](#design)
+    + [Imagery](#imagery)
+    + [Colour Scheme](#colour-scheme)
+    + [Fonts](#fonts)
+    + [Layout](#layout)
+    + [Wireframes](#wireframes)
+      - [Desktop Wireframe - Improv Launch Pad](#desktop-wireframe---improv-launch-pad)
+      - [Desktop Wireframe - Scale Game](#desktop-wireframe---scale-game)
+      - [Mobile Wireframe - Improv Launch Pad](#mobile-wireframe---improv-launch-pad)
+      - [Mobile Wireframe - Scale Game](#mobile-wireframe---scale-game)
+  * [Features](#features)
+    + [Home Page - Improv Launch Pad](#home-page---improv-launch-pad)
+    + [Scale quiz](#scale-quiz)
+  * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [Javascript](#javascript)
+    + [Accessibility](#accessibility)
+    + [Button Testing](#button-testing)
+    + [Game Testing](#game-testing)
+    + [Browser Testing](#browser-testing)
+    + [Device Testing](#device-testing)
+    + [Fixed Bugs](#fixed-bugs)
+      - [The Quiz didn't cycle through question options](#the-quiz-didn-t-cycle-through-question-options)
+      - [Several semantic errors such as unclosed div's and missing semicolons](#several-semantic-errors-such-as-unclosed-div-s-and-missing-semicolons)
+    + [Known Bugs](#known-bugs)
+  * [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  * [Deployment](#deployment)
+  * [Cloning](#cloning)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Media](#media)
+    + [Resources Used](#resources-used)
+  * [Acknowledgments](#acknowledgments)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -188,11 +232,8 @@ Throughout the development there were several bugs that were noted and solved. T
 #### The Quiz didn't cycle through question options
 This was a simple fix of changing the array to be more varied. While I was doing this, I added more questions to make the quiz more challenging.
 
-#### 
-
-
-#### 
-
+#### Several semantic errors such as unclosed div's and missing semicolons
+These were mainly highlighted during validation but a few prented the code from working as intended during development.
 
 ### Known Bugs
 There are no known bugs.
@@ -248,7 +289,7 @@ To clone this repository follow the below steps:
 ## Credits
 
 ### Content
-The inspiration for the improvisation launch pad came from guitarist Dan Phelps [Dan Phelps](https://www.danphelps.com/). During the COvid 19 lockdown, he published the original version using a printed sheet and dice. He also recorded and released the backing tracks that are used in the launchpad [Improv launch pad loops](https://soundcloud.com/oceanographic/sets/ilp)
+The inspiration for the improvisation launch pad came from guitarist Dan Phelps [Dan Phelps](https://www.danphelps.com/). During the Covid 19 lockdown, he published the original version using a printed sheet and dice. He also recorded and released the backing tracks that are used in the launchpad [Improv launch pad loops](https://soundcloud.com/oceanographic/sets/ilp)
 
 ### Media
 Images of suggested fingerings were sourced from:
@@ -263,11 +304,11 @@ Scale audio files were created by myself using Ableton Live 11
 
 - [W3Schools](https://www.w3schools.com/)  
 - The following article was used to help shuffle the array in order to make the quiz more challenging
-(Shuffle Array)[https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array]
+[Shuffle Array](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 - This Youtube quiz tutorial was used when creating the scale quiz
-(How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript)[https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack]
+[How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack)
 - This Random quote generator was helpful when developing the prompt generator
-(Random Quote Generator | Javascript Beginner Project Tutorial)[https://www.youtube.com/watch?v=NmstSmMykqc]
+[Random Quote Generator | Javascript Beginner Project Tutorial](https://www.youtube.com/watch?v=NmstSmMykqc)
 - Elements were inspired by the code institute Love maths project 
 [Code institute "Love Maths" Walk through project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/?child=last)
 - ...and the code institute Love running project 
@@ -280,38 +321,3 @@ My mentor Antonio for his support and advice.
 The Code Institute slack community for their quick responses and very helpful feedback!
 
 The code institute tutoring team for their help in problem solving.
-
-
-
-
-
-
-
-
-
-GENERAL TEMP NOTES
-
-Future improvements:
-Different levels. Maybe, easy medium hard
-
-TODO-------------------------
-- delete this infor from the end
-- READ
--compile table of contents
-
-
-Credits:
-Dan phelps who developed the toolkit but has since took down all references to it on his website. [danphelps.com](https://www.danphelps.com/)
-Guitar scales generated from  [all-guitar-chords](https://www.all-guitar-chords.com/scales)
-Code institute "Love Maths" Walk through project  [Code institute "Love Maths" Walk through project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/?child=last)
-
-
-
-CODE
-https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-an-element-using-javascript
-Random Quote Generator:
-https://www.youtube.com/watch?v=NmstSmMykqc
-How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript
-https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack
-Shuffle array
-https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
