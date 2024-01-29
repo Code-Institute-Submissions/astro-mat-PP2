@@ -1,6 +1,6 @@
 # Guitar Practice Tools
 
-Guitar Practice tools is a site providing a suite of tools useful to the guitarist. It aims to provide the user with an interactive guitar practice structure. THe site will also provide a scale learning quiz that tests the users scale knowledge and aims to to teach the ability to recognise scales by ear. 
+Guitar Practice tools is a site providing a suite of tools useful to the guitarist. It aims to provide the user with an interactive guitar practice structure. The site will also provide a scale learning quiz that tests the users scale knowledge and aims to to teach the ability to recognise scales by ear. 
 
 It will be a basic site that will provide a good visual experience and clear images. The game is a great way to teach users the sound of different scales and then use that knowledge during practice.
 users
@@ -16,33 +16,31 @@ Table of Contents
 ## Site Owner Goals
 - To provide the user with an easy to navigate game that is both fun and educational.
 - To present the user with a website that is visually appealing and fully responsive.
-- To allow the user to choose from a selection of habitats and also to let them increase the level of difficulty of the game if they wish.
-- Invoke a sense of urgency to complete the game as quickly as possible. 
+- To present the user with an easy to use tool for prompting their improvisation practice.
 - To entice the user to return to the game to improve their score.
 
 ## User Stories
 
 - ### First Time User
   - As a first time user I want to understand the main purpose of the game
-  - As a first time user I want to be able to intuitively navigate the game, choose my level of difficulty, choose a habitat, play the game, see my score and restart the game once it ends.
-  - As a first time user I want to have fun and learn about animals and their habitats
+  - As a first time user I want to be able to intuitively navigate the game, play the game, see my score and restart the game once it ends.
+  - As a first time user I want to be able to intuitively navigate the improv tool, randomise the prompt when I would like, play a backing track related to selected key and see fingering suggestions for that key.
+  - As a first time user I want to have fun and learn about scales and improve my improvisation skills.
 
 - ### Returning user
-  - As a returning user I want to be able to play the same game without getting the same selection of animals.
-  - As a returning user I want to be able to play a different game (different habitat).
-  - As a returning user I want to be able to save my score to the leaderboard.
+  - As a returning user I want to be able to play the same game without getting the same selection questions.
+  - As a returning user I want to be able to get new improvisation prompts.
 
 - ### Frequent user
-  - As a frequent user I want to be able to increase the level of difficulty of the game.
-  - As a frequent user I want to be able to beat my previous score on the leaderboard.
+  - As a frequent user I want to be able to be challenged further.
+  - As a frequent user I want to be able to beat my previous score.
 
 
 ## Design
 
 ### Imagery
 - The imagery and colour scheme of the site were both given careful consideration to ensure they compliment each other. The imagery used in the game is very important to the overall experience of the user. 
-- Cartoon style imagery was chosen to give a playful feel to the site and to appeal to young children. 
-- Given that that the game relates to animal habitats, a nature theme is consistently used across all imagery in order to tie in with the overall theme of the game. 
+- A simple, no nonsense style was chosen to minimise distraction from the intent. 
 
 ### Colour Scheme
 
@@ -50,26 +48,20 @@ Colour palette from Coolors
 
 ![Colour Palette](docs/readme_images/colour_palette.png)
 
-- The colour scheme of the site is mainly green and yellow with varying shades of green used to tie in with the nature imagery. The yellow chosen is happy and cheerful in order to be appealing for young children. 
+- The colour scheme of the site is mainly subtle greys and blues. It was chosen to fit the simple nature and to provide high contrast. 
 
-- The color scheme of the site ties in with the main homepage image and the color picker Chrome extension was used to pull out the main colours as seen in the colour palette. These were then used throughout the site. 
-
-- Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility. Depending on the habitat selected, the font colour and and title background colour will change to ensure good contrast against the habitat image.
+- Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
 
 ### Fonts
-The Poppins font is the main font used throughout the whole website. This font was imported via [Google Fonts](https://fonts.google.com/). The Mochiy Pop P One font is used for the main header and buttons to give a playful feel.  
-
+The Raleway font is the main font used throughout the whole website. This font was imported via [Google Fonts](https://fonts.google.com/). Again, this font seemed to fit the general asthetic of the site.
 Sans Serif is used as a backup font, in case for any reason the main font isn't being imported into the site correctly.
 
 ### Layout
-The site is a single page with 6 sections:
-  - Welcome area
-  - How to play
-  - Leaderboard
-  - Game selection area
-  - Play game
-  - Game over and score
+The site is made up of 2 sections:
+  - Improv launchpad area
+  - Scale Quiz
+
 
 ### Wireframes
 
@@ -103,95 +95,39 @@ Wireframes were produced using Balsamiq.
 
 ## Features
 
-### Home Page
+### Home Page - Improv Launch Pad
 
-The landing page of the website has a very simple layout which includes a H1 heading stating the name of the game and three large colourful interactive buttons that are easy for kids to select. The user is given three options to choose from:
- - How to Play
- - Play
- - Leaderboard
+The landing page of the website is the Improve launchpad as this is seen as the main function of the site. There is a simple header that allows straightforward navigation 
 
- ![Landing Page](docs/readme_images/landing_page.png)
+![Landing Page - Improv Launch Pad](docs/readme_images/landing_page.jpg)
 
-### How to Play Page
+ between the launchpad and the game. The user is invited to press a button that generates the practice prompt.
+ 
+![Landing Page - Improv Launch Pad](docs/readme_images/landing_page_generated_1.jpg)
 
-If the user clicks the "How to Play" button the instructions section appears and the user can read the main rules of the game. The back button will take them back to the welcome area.
+ And it also generates a backing track in the same key as the prompt and some example fingerings to reference while playing
 
-![Instructions](docs/readme_images/instructions_section.png)
+![Landing Page - Improv Launch Pad](docs/readme_images/landing_page_generated_2.jpg)
 
-### Leaderboard
 
-- The leaderboard section shows the player the three highest scores which have been saved. 
-- All scores are saved in local storage so players can only compete with anyone who attempts the quiz on the same machine. 
-- The score saved is the number of seconds taken to complete the game. (With the highest score being the least time taken)
+### Scale quiz
 
-![Leaderboard](docs/readme_images/leaderboard_section.png)
+The user can then navigate via the header nav bar to the scale quiz
 
-### Game Selection
+![Scale Quiz](docs/readme_images/scale_quiz.jpg)
 
-- There are two levels of difficulty to choose from (easy and hard) and this option is presented as a radio button. 
-- The default level selected is easy.
-- The user can then choose from four habitats - each contains an object of different animals.
+The user can then push the play button in order to hear the scale. After hearing the scale, they can push one of four answers which they think the scale is. If correct, the button goes green and a next button becomes visible which takes them to the next question. 
 
-![Game Selection](docs/readme_images/game_selection.png)
+![Scale Quiz](docs/readme_images/scale_quiz_correct.jpg)
 
-<details>
+If incorrect, the selected button turns red and the correct answer turns green. Thus giving the user the opportunity to learn from their mistake. The next button also appeers in this case.
 
-<summary>Mobile Game Selection</summary>
+![Scale Quiz](docs/readme_images/scale_quiz_incorrect.jpg)
 
-![Mobile Game Selection](docs/readme_images/mobile_game_selection.png)
+After five attempts, the user is taken to a results page where the results are displayed and the opportunity to have another is given
 
- </details>
+![Scale Quiz](docs/readme_images/scale_quiz_results.jpg)
 
-### Game Area
-
-#### Easy Game
-
-- The easy game includes four animal cards - three of which are correct answers and one incorrect.
-- A different selection of cards is displayed each time a new game is started and the same card will never be duplicated in the same game.
-- The background image changes to an image of the habitat selected and the habitat name is inserted into the heading text. 
-- The information bar at the top of the game area includes a counter for incorrect attempts and a timer function. 
-- If the user selects a correct card it will turn green. If incorrect, the card will display a shake animation.
-- When the user clicks on the last correct card the timer stops, the game ends and the game over area appears.
-
-![Easy Game](docs/readme_images/easy_game.png)
-
-<details>
-
- <summary>Mobile Easy Game</summary>
-
-![Mobile Easy Game](docs/readme_images/mobile_easy_game.png)
-
-![Mobile Landscape Easy Game](docs/readme_images/landscape_game_easy.png)
-
- </details>
-
-#### Hard Game
-
-- The hard game includes eight animal cards - five of which are correct answers and three incorrect.
-
-![Hard Game](docs/readme_images/hard_game.png)
-
-<details>
-
- <summary>Mobile Hard Game</summary>
-
-![Mobile Hard Game](docs/readme_images/mobile_hard_game.png)
-
-![Mobile Landscape Hard Game](docs/readme_images/landscape_game_hard.png)
-
- </details>
-
-### Game Over
-- The section shows the players score which includes their time, number of incorrect attempts and level played.
-- The player has an option to insert their name into the text input box and save their score to the leaderboard using local storage. 
-- If no name is entered the user will be unable to save the score and a red border and shake animation will appear on the text input. 
-- If the username is entered correctly the user will be taken directly to the leaderboard page.
-
-![Game Over](docs/readme_images/win_game_section.png)
-
-### Features Left to Implement
-- Email JS to signup to newsletter
-- Ability to play sounds
 
 ## Testing
 
@@ -224,24 +160,18 @@ Desktop Lighthouse Score
 ![Desktop Lighthouse Score - Improv LaunchPad](docs/readme_images/desktop_lighthouse_improvLP.jpg)
 ![Desktop Lighthouse Score - Scale Game](docs/readme_images/desktop_lighthouse_scalegame.jpg)
 
-### Input Testing
-- The username text input has been tested to ensure it won't save to the leaderboard unless text is inputted into the field.
 
 ### Button Testing
 - All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
 
 ### Game Testing
 - The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
-  - Correct and incorrect animal cards were shuffled.
-  - The same animal card didn't appear twice in the same game. 
-  - The game shows a different selection of cards each time it's played.
-  - The scene background changes to match the habitat selected.
-  - The name of the habitat selected is inserted into the H2 in the game area once selected.
-  - The game ends once all the correct animals have been selected.
-  - The timer stops when the game ends.
-  - The incorrect attempts counter captures all incorrect clicks.
-  - The correct score is shown once the game ends.
-  - The leaderboard was tested to ensure that scores are saved in the correct order (quickest time first) and that only three scores are shown.
+  - That the suggested fingerings and backing track match the suggested key
+  - That all links work.
+  - That the correct answers are actually correct.
+  - that there is sufficient variation between different quiz questions
+  - That the answers are correctly added at the end
+  - That there is good legibility overall.
 
 ### Browser Testing
 - The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
@@ -249,25 +179,20 @@ Desktop Lighthouse Score
 ### Device Testing
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
 - I also used the following website to test responsiveness:
-    - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Faliokeeffe.github.io%2FThe-Animal-Association-Game%2F)
+    - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fastro-mat.github.io%2FPP2%2F)
 
 ### Fixed Bugs
 
-#### SetTimeout() method on incorrect cards
-- When the user selects an incorrect animal during the game a shake animation CSS rule is added to the animal card using a click listener. 
-- When testing the game I noticed that once the card has been clicked once, the shake animation didn't fire on subsequent clicks. 
-- In order to fix this I added the setTimeout() method to call a function to remove the CSS class after half a second (sufficient time for the animation to finish). This meant that for subsequent incorrect clicks, the shake animation rule could be added to the card again meaning that the card shakes each time it is clicked.
+Throughout the development there were several bugs that were noted and solved. These included;
 
-#### Making a Deep Clone of an Object
-- In order to avoid having duplicated animals showing in a game, each time an animal card is written to the DOM it is spliced out of the animals object. In order to avoid altering the original animals object I needed to first make a clone of the object and splice the animals out of the new object instead. 
-- To do this, I first used the spread operator however I quickly noticed that I was not getting the results I expected and the original object was still being changed when I spliced the cloned object. 
-- Upon researching this I realised the issue was that my animals object was actually a nested object. When you have a nested object and you copy it, nested objects inside that object will not be copied. Therefore, if you change the nested object, you will change it for both instances.
-- To fix this I had to make a deep clone of the nested object by stringifying the object and parsing it right after - JSON.parse(JSON.stringify(a)). The following article was very useful : [How to differentiate between deep and shallow copies in JavaScript](https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/)
+#### The Quiz didn't cycle through question options
+This was a simple fix of changing the array to be more varied. While I was doing this, I added more questions to make the quiz more challenging.
 
-#### Username Input Data Validation
-- In order to prevent the user saving a blank username to the leaderboard I wrote javaScript to prevent the score saving to the leaderboard if the text input value equaled an empty string. 
-- However when I put my project into the peer review slack channel one of my peers kindly tested this validation and was able to save a blank username by inputting an empty space and then saving.
-- In order to fix this I did a bit of research and found that the trim function could be used to prevent whitespace from being saved. I was able to amend my function to include this and now the username will only save if a character is inputted.
+#### 
+
+
+#### 
+
 
 ### Known Bugs
 There are no known bugs.
@@ -291,6 +216,8 @@ There are no known bugs.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 - [Coolors](https://coolors.co/) - Used to create colour palette.
 - [Favicon](https://favicon.io/) - Used to create the favicon.
+- [Soundcloud](https://soundcloud.com/) - Used to host the backing tracks.
+- [all-guitar-chords](https://www.all-guitar-chords.com/scales) - Used to generate the Fingering images.
 
 
 ## Deployment
@@ -304,14 +231,14 @@ The site was deployed using GitHub pages. The steps to deploy using GitHub pages
 5. Once selected, click the 'Save'.
 6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
-The live link can be found here - [The Animal Association Game](https://aliokeeffe.github.io/The-Animal-Association-Game/)
+The live link can be found here - [Guitar Practice Tools](https://astro-mat.github.io/PP2/)
 
 
 ## Cloning
 
 To clone this repository follow the below steps: 
 
-1. Locate the repository at this link [The Animal Association Game Repository](https://github.com/AliOKeeffe/The-Animal-Association-Game). 
+1. Locate the repository at this link [The Animal Association Game Repository](https://github.com/astro-mat/PP2.git). 
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
 3. Open **Terminal**.
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
@@ -321,48 +248,38 @@ To clone this repository follow the below steps:
 ## Credits
 
 ### Content
-The inspiration for this game came from my children Naomi and Fionn and their favourite book called Wild Animals - Illustrated by  Neiko Ng. The book features many different habitats; jungle, safari, desert, forest etc. The aim of the book is to find all the animals in the picture. I thought that an adapted version of this would be an interesting and fun idea for my javascript project whereby the animals had to be matched to the habitat (instead of being found within it). 
-
-Fionn and Naomi have already got a lot of enjoyment from playing it! 
+The inspiration for the improvisation launch pad came from guitarist Dan Phelps [Dan Phelps](https://www.danphelps.com/). During the COvid 19 lockdown, he published the original version using a printed sheet and dice. He also recorded and released the backing tracks that are used in the launchpad [Improv launch pad loops](https://soundcloud.com/oceanographic/sets/ilp)
 
 ### Media
-All images and videos were sourced from:
- - [Freepik](https://www.freepik.com/home)
+Images of suggested fingerings were sourced from:
+ - [all-guitar-chords](https://www.all-guitar-chords.com/scales)
 
-With thanks to the below amazing artists:
-- @pikisuperstar - Farm background
-- @fahreza-design - Sea background
-- @freepik - Jungle backgounds
-- @brgfx - Safari background
-- @inspiring - Animal vectors
-- @pchvector - Marine animal vectors
-- @terdpongvector - Animal Vectors 
+Scale audio files were created by myself using Ableton Live 11 
+ - [Ableton Live](https://www.ableton.com/en/live/)
+
+
 
 ### Resources Used
 
 - [W3Schools](https://www.w3schools.com/)  
-- [Stack Overflow](https://stackoverflow.com/)
-- The following article was very helpful in understanding shallow vs deep clones and how to clone a nested object - [How to differentiate between deep and shallow copies in JavaScript](https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/).
-- The code for building the leaderboard using local storage was inspired by the following tutorial which I then  adapted for my own game (episodes 8 & 9) - [Build a Quiz App with HTML CSS AND Javascript - By James Q Quick (episodes 8 & 9)](https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF).
-- I used the Fisher Yates Shuffle in order to shuffle the correct and incorrect animal cards which I learned about in this tutorial - [Shuffle an array](https://javascript.info/task/shuffle).
-- The following post was useful in validating my username input - [How to prevent empty field being saved](https://teamtreehouse.com/community/how-do-you-prevent-an-empty-input-field-being-added-to-my-todo-list).
-- I used the following article to learn about the setTimeout method in order to remove classes from elements after a certain period of time had lapsed. - [Delay, Sleep, Pause, & Wait in JavaScript](https://www.sitepoint.com/delay-sleep-pause-wait/).
-- Inspiration for the stopwatch used in the game came from this post which I then adapted for my own game. - [Create a Simple Stopwatch using JavaScript](https://dev.to/shantanu_jana/create-a-simple-stopwatch-using-javascript-3eoo).
-- The shake animation effect for incorrect card selection came from [W3Schools](https://www.w3schools.com/howto/howto_css_shake_image.asp)
+- The following article was used to help shuffle the array in order to make the quiz more challenging
+(Shuffle Array)[https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array]
+- This Youtube quiz tutorial was used when creating the scale quiz
+(How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript)[https://www.youtube.com/watch?v=PBcqGxrr9g8&t=129s&ab_channel=GreatStack]
+- This Random quote generator was helpful when developing the prompt generator
+(Random Quote Generator | Javascript Beginner Project Tutorial)[https://www.youtube.com/watch?v=NmstSmMykqc]
+- Elements were inspired by the code institute Love maths project 
+[Code institute "Love Maths" Walk through project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/?child=last)
+- ...and the code institute Love running project 
+[code institute "Love running walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/1da6ad13213740f1855a51d30a2375b1/)
+
 
 ## Acknowledgments
 My mentor Antonio for his support and advice.
 
 The Code Institute slack community for their quick responses and very helpful feedback!
 
-How to fork and clone
-
-
-TESTING
-
-Lighthouse
-
-Performance
+The code institute tutoring team for their help in problem solving.
 
 
 
