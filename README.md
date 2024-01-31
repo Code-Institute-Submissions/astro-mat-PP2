@@ -3,7 +3,6 @@
 Guitar Practice tools is a site providing a suite of tools useful to the guitarist. It aims to provide the user with an interactive guitar practice structure. The site will also provide a scale learning quiz that tests the users scale knowledge and aims to to teach the ability to recognise scales by ear. 
 
 It will be a basic site that will provide a good visual experience and clear images. The game is a great way to teach users the sound of different scales and then use that knowledge during practice.
-users
 
 The live link can be found here - [Guitar Practice tools](https://astro-mat.github.io/PP2/)
 
@@ -12,6 +11,7 @@ The live link can be found here - [Guitar Practice tools](https://astro-mat.gith
 ## Table of Contents
 
 - [Guitar Practice Tools](#guitar-practice-tools)
+  * [Table of Contents](#table-of-contents)
   * [Site Owner Goals](#site-owner-goals)
   * [User Stories](#user-stories)
     + [First Time User](#first-time-user)
@@ -44,6 +44,7 @@ The live link can be found here - [Guitar Practice tools](https://astro-mat.gith
       - [The Quiz didn't cycle through question options](#the-quiz-didn-t-cycle-through-question-options)
       - [Several semantic errors such as unclosed div's and missing semicolons](#several-semantic-errors-such-as-unclosed-div-s-and-missing-semicolons)
     + [Known Bugs](#known-bugs)
+  * [Future Improvements](#future-improvements)
   * [Technologies Used](#technologies-used)
     + [Languages](#languages)
     + [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
@@ -56,6 +57,7 @@ The live link can be found here - [Guitar Practice tools](https://astro-mat.gith
   * [Acknowledgments](#acknowledgments)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Site Owner Goals
 - To provide the user with an easy to navigate game that is both fun and educational.
@@ -79,7 +81,6 @@ The live link can be found here - [Guitar Practice tools](https://astro-mat.gith
   - As a frequent user I want to be able to be challenged further.
   - As a frequent user I want to be able to beat my previous score.
 
-
 ## Design
 
 ### Imagery
@@ -102,7 +103,7 @@ The Raleway font is the main font used throughout the whole website. This font w
 Sans Serif is used as a backup font, in case for any reason the main font isn't being imported into the site correctly.
 
 ### Layout
-The site is made up of 2 sections:
+The site is made up of 2 sections accessed via nav bar header:
   - Improv launchpad area
   - Scale Quiz
 
@@ -141,7 +142,7 @@ Wireframes were produced using Balsamiq.
 
 ### Home Page - Improv Launch Pad
 
-The landing page of the website is the Improve launchpad as this is seen as the main function of the site. There is a simple header that allows straightforward navigation 
+The landing page of the website is the Improv launchpad as this is seen as the main function of the site. There is a simple header that allows straightforward navigation 
 
 ![Landing Page - Improv Launch Pad](docs/readme_images/landing_page.jpg)
 
@@ -206,7 +207,7 @@ Desktop Lighthouse Score
 
 
 ### Button Testing
-- All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
+- Every button underwent manual testing to verify that users are directed to the appropriate sections of the website and that all functions operate as intended.
 
 ### Game Testing
 - The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
@@ -218,10 +219,10 @@ Desktop Lighthouse Score
   - That there is good legibility overall.
 
 ### Browser Testing
-- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues found.
     
 ### Device Testing
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+- The responsiveness of the website was tested on different devices, including Desktop, Laptop, iPhone 8, iPhoneX, and iPad, to ensure optimal performance across various screen sizes in both portrait and landscape orientations. The website behaved as expected during testing. Additionally, the responsive design was verified using Chrome developer tools on multiple devices, and the structural integrity was maintained across different sizes.
 - I also used the following website to test responsiveness:
     - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fastro-mat.github.io%2FPP2%2F)
 
@@ -236,7 +237,14 @@ This was a simple fix of changing the array to be more varied. While I was doing
 These were mainly highlighted during validation but a few prented the code from working as intended during development.
 
 ### Known Bugs
-There are no known bugs.
+- During lighthouse testing, It was noticed that the results were below 100% for best practice. It seems that this is caused by a couple of rough images used when developing the site and that are still present. Due to nature of gutHub, it is not a trivial task to remove these and as the results are well within acceptable limits it was decided to leave them in place.
+
+## Future Improvements
+In the future, if I was to develop this project further I would
+
+- Develop more tools that a user could user.
+- Allow user to select how difficult they want the game and prompt to be.
+- Perhaps find a way of monetising the site either through paid adverts, subscription model etc.
 
 ## Technologies Used
 
@@ -313,11 +321,14 @@ Scale audio files were created by myself using Ableton Live 11
 [Code institute "Love Maths" Walk through project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/?child=last)
 - ...and the code institute Love running project 
 [code institute "Love running walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/1da6ad13213740f1855a51d30a2375b1/)
+- Excellent project PP2 project submission by AliOKeeffe The-Animal-Association-Game used as a best practice example
+[The-Animal-Association-Game
+](https://github.com/AliOKeeffe/The-Animal-Association-Game)
 
 
 ## Acknowledgments
 My mentor Antonio for his support and advice.
 
-The Code Institute slack community for their quick responses and very helpful feedback!
+The Code Institute slack community for their quick responses and help.
 
 The code institute tutoring team for their help in problem solving.
